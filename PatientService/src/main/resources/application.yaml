@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: PatientService
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    enabled: false
