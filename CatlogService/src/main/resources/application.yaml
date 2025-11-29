@@ -5,9 +5,7 @@ spring:
   data:
     mongodb:
       # Option 1: Simple configuration (local development)
-      host: localhost
-      port: 27017
-      database: catalog_db
+      uri: ${MONGODB_URI}
 
       # Option 2: Using URI (recommended for production)
       # uri: mongodb://localhost:27017/catalog_db
@@ -19,7 +17,10 @@ spring:
       # uri: mongodb+srv://username:password@cluster.mongodb.net/catalog_db
 
 server:
-  port: 8081
+  port: ${PORT:8080}
 eureka:
   client:
     enabled: false
+logging:
+  level:
+    root: INFO
