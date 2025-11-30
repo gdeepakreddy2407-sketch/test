@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: CatalogService
+
+  data:
+    mongodb:
+      client-uri: ${MONGODB_URI:mongodb://localhost:27017/catalog_db}
+
+server:
+  port: ${PORT:8080}
+eureka:
+  client:
+    enabled: false
+logging:
+  level:
+    root: INFO
