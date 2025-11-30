@@ -4,7 +4,7 @@ spring:
 
   data:
     mongodb:
-      client-uri: ${MONGODB_URI:mongodb://localhost:27017/catalog_db}
+      uri: ${MONGODB_URI:mongodb://localhost:27017/catalog_db}
 
 server:
   port: ${PORT:8080}
