@@ -40,5 +40,9 @@ public class ProductController {
         List<Entity> files = repo.findByName(name);
         return files;
     }
+    @GetMapping("/health")
+    public ResponseEntity<String> health() {
+    return ResponseEntity.ok("OK");
+    }
 
 }
